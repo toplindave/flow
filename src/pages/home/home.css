@@ -1,0 +1,90 @@
+::-webkit-scrollbar {
+	width: 0.1rem;
+}
+::-webkit-scrollbar-track {
+	background: none;
+}
+::-webkit-scrollbar-thumb {
+	/* background: var(--green); */
+	height: 80vh;
+}
+:root {
+	--green: #b2ff55;
+	--white: #ffffff;
+	--margin: 10px;
+	--font: Orelo SemiWide Heavy;
+	--font-mediun: Orelo SemiWide Medium;
+	--normal-font: Acumin Pro;
+	--gold: #f7dd95;
+}
+.home {
+	/* background: darkcyan; */
+	width: 78%;
+	height: 100vh;
+	z-index: 20;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	/* display: none; */
+	scroll-snap-type: y mandatory;
+	scroll-behavior: smooth;
+	overflow-y: auto;
+	/* scrollbar-width: none; */
+	/* &::-webkit-scrollbar {
+		display: none;
+	} */
+	/* direction: rtl; */
+}
+section {
+	height: 100vh;
+	width: 100%;
+	border: 1px solid aqua;
+	padding: 10.5% 0% 0px 5%;
+	/* scroll-snap-align: start; */
+	/* scroll-snap-align: end; */
+	/* direction: ltr; */
+}
+.dev {
+	font-family: var(--font-mediun);
+	color: var(--gold);
+	/* font-size: 2.3rem; */
+	font-size: clamp(1.9rem, 3vw, 6rem);
+	font-weight: 500;
+	/* background: royalblue; */
+	width: calc(100% - 35%);
+	margin-bottom: calc(100vh - 355px);
+	/* margin-bottom: calc(100vw - 100%); */
+	/* margin-bottom: calc(calc(90vw - 100%) + calc(100vh - 30%)); */
+	/* margin-bottom: clamp(
+		calc(100vw - 200%),
+		calc(80vw - 100%),
+		calc(100vw - 100%)
+	); */
+	position: relative;
+}
+p {
+	/* font-size: 1rem; */
+	font-size: clamp(0.5rem, 1.5vw, 3rem);
+	font-family: var(--normal-font);
+	font-weight: 300;
+	width: calc(100% - 25%);
+	line-height: 30px;
+	/* background-color: aqua; */
+	margin-bottom: 20px;
+}
+
+button {
+	background: transparent;
+	width: 200px;
+	height: 40px;
+	outline: none;
+	border: 1px solid #707070;
+	color: var(--gold);
+	cursor: pointer;
+}
+.h-2 {
+	margin-top: 220px;
+	font-family: "Acumin Pro";
+	font-size: clamp(1.6rem, 2vw, 3.5rem);
+	margin-bottom: 5px;
+}

@@ -1,0 +1,52 @@
+.hold {
+	position: relative;
+	background: salmon;
+}
+.service {
+	width: 78%;
+	height: 100%;
+	z-index: 20;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	background: darkcyan;
+	/* direction: rtl; */
+}
+section {
+	height: 100vh;
+	width: 100%;
+	/* border: 1px solid aqua; */
+	padding: 6% 6% 0px 3%;
+	scroll-snap-align: start;
+	scroll-snap-align: end;
+	/* direction: ltr; */
+}
+.service-second-section {
+	height: 120vh;
+}
+.flex {
+	display: flex;
+	/* background: aquamarine; */
+	align-items: center;
+}
+.flex .dev {
+	/* background: brown; */
+	width: calc(100% - 50%);
+	margin-bottom: 0px;
+}
+p {
+	/* background: khaki; */
+	margin-top: 5px;
+}
+.grid {
+	display: grid;
+	grid-template-columns: repeat(3, 61%);
+	/* grid-template-rows: repeat(2, 440px); */
+	/* background: violet; */
+	/* gap: 1rem; */
+	padding: 0px 10% 0px 0px;
+	height: auto;
+	width: 100%;
+	/* background: violet; */
+	/* padding-bottom: 20%; */
+}

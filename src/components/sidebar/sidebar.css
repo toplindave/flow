@@ -1,0 +1,85 @@
+:root {
+	--green: #b2ff55;
+	--white: #ffffff;
+	--margin: 10px;
+}
+
+.sidebar {
+	/* background: rebeccapurple; */
+	width: 22%;
+	height: 100vh;
+	padding: 3% 2.1% 0px 2.1%;
+	border-right: solid 1px gray;
+	position: absolute;
+	/* background: paleturquoise; */
+	z-index: 20;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+}
+.logo {
+	display: block;
+	/* background: red; */
+	text-align: center;
+	text-decoration: none;
+	/* margin-bottom: 140%; */
+	margin-bottom: calc(100vh - 310px);
+	/* margin-bottom: calc(100vh * 100px); */
+	/* margin-bottom: clamp(280px, 9vh, 700px); */
+	/* padding-bottom: 130%; */
+}
+.logo-pic {
+	font-size: 3rem;
+	color: var(--green);
+}
+.logo-pic svg {
+	font-size: 3rem;
+	color: var(--green);
+	width: 25%;
+	height: 25%;
+	/* background: red; */
+	fill: var(--green);
+}
+.logo-text {
+	font-size: 1rem;
+	color: var(--white);
+	font-family: "Orelo SemiWide Heavy";
+	/* font: normal normal bold 16px/19px Orelo SemiWide Extra; */
+}
+.active::after {
+	content: "";
+	width: calc(2rem + 8px);
+	height: 1px;
+	background-color: var(--green);
+	margin-left: 7%;
+}
+.active::before {
+	content: "";
+	width: calc(2rem + 8px);
+	height: 1px;
+	background-color: var(--green);
+	margin-right: 7%;
+	/* transition: 1s; */
+}
+.navbar ul {
+	/* background: darkcyan; */
+	display: block;
+}
+.navbar ul li {
+	list-style: none;
+	margin-bottom: var(--margin);
+}
+.navbar ul li a {
+	text-decoration: none;
+	font-size: 1rem;
+	font-family: "acumin pro";
+	font-weight: 300;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.navbar ul li a:hover {
+	color: var(--green);
+	transition: 0.5s;
+	/* filter: invert(1); */
+}

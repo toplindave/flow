@@ -1,0 +1,45 @@
+.box {
+	/* background: teal; */
+	/* height: 300px; */
+	border: 0.5px solid #f7dd95;
+	/* height: 100%; */
+	padding: 6% 7% 15% 7%;
+}
+
+.display {
+	/* background: greenyellow; */
+	width: 100%;
+	height: 30%;
+	display: flex;
+	justify-content: center;
+	/* display: none; */
+	/* width: 160px; */
+	height: 100px;
+	margin-bottom: 48px;
+}
+.asp {
+	background: burlywood;
+	position: relative;
+	height: 100%;
+	width: 60%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.box-header {
+	font-size: 1.1rem;
+	/* background: mediumblue; */
+	margin-bottom: 35px;
+}
+.box-text {
+	font-size: 11px;
+	/* background: mediumpurple; */
+	width: 100%;
+	line-height: normal;
+}
+.box-btn {
+	width: 39px;
+	height: 26px;
+	border-radius: 50%;
+	background: darkcyan;
+}
