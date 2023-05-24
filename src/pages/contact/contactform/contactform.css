@@ -48,4 +48,39 @@
 	background: var(--white);
 	color: #243553;
 	font-weight: 600;
+	/* background: transparent; */
+	width: 180px;
+	height: 40px;
+	outline: none;
+	border: 1px solid var(--white);
+	/* color: var(--gold); */
+	cursor: pointer;
+	position: relative;
+	transition: 0.4s ease-in-out;
+	z-index: 1;
+	font-weight: 600;
+}
+.contact-form-sub:hover {
+	background: transparent;
+	transition: all 0.4s ease-in-out;
+	border: 1px solid #243553;
+	color: var(--white);
+}
+.contact-form-sub::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: #243553;
+	z-index: -1;
+	/* opacity: 0.2; */
+	transform: scaleX(0);
+	transform-origin: right;
+	transition: transform 0.4s ease-in-out;
+}
+.contact-form-sub:hover::after {
+	transform: scaleX(1);
+	transform-origin: left;
 }

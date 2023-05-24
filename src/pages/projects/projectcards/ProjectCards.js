@@ -10,6 +10,7 @@ const card = (content) => {
 				number={content.number}
 				title={content.title}
 				src={content.src}
+				// key={content.key}
 			/>
 		</>
 	);

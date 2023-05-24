@@ -15,9 +15,12 @@ function Box(props) {
                     <div className='ang'></div> */}
 				</div>
 			</div>
-			<h2 className="box-header">{props.header}</h2>
-			<p className="box-text">{props.desp}</p>
-			<button className="box-btn">---</button>
+			<div className="box-letter">
+				<div className="numbering-card">{props.nub} </div>
+				<h2 className="box-header">{props.header}</h2>
+				<p className="box-text">{props.desp}</p>
+				<button className="box-btn">---</button>
+			</div>
 		</div>
 	);
 }

@@ -1,43 +1,52 @@
 import React from "react";
-import Footer from "../../components/footer/Footer";
 import Scroll from "../../components/scroll.js/Scroll";
 import Gridcard from "./grid/Gridcard";
-import Illustration from "./illustration/Illustration";
+// import Illustration from "./illustration/Illustration";
 import "./services.css";
+import { motion } from "framer-motion";
 
 function Services() {
 	return (
-		<div className="hold">
-			<div className="service">
-				<section>
-					<h1 className="dev">
+		<div className="service">
+			<section>
+				<div className="section-left"></div>
+				<div className="section-right">
+					<motion.h1
+						className="dev"
+						initial={{ y: 30, opacity: "0" }}
+						whileInView={{ y: 0, opacity: "1" }}
+						transition={{ duration: 0.5 }}>
 						Applications With Unique Features And Functionalities
-					</h1>
-
-					<p>
+					</motion.h1>
+					<Scroll />
+					<motion.p>
 						Businesses small and large need web-based solutions to meet their
 						and their client's needs. GreenieTec delivers services that are
 						scalable, flexible, and most importantly secure which cut across a
 						range of platforms, technologies, and design techniques.
-					</p>
-					<Scroll />
-				</section>
-				<section className="service-second-section">
+					</motion.p>
+				</div>
+			</section>
+			<section className="service-second-section">
+				<div className="section-left"></div>
+				<div className="section-right">
 					<div className="flex">
-						<h1 className="dev">Our Development Process</h1>
+						<h1 className="flex-dev">Our Development Process</h1>
 
-						<p>
+						<p className="flex-p">
 							GreenieTec is commited to the creation of platforms (website or
 							applications) and solutions to boost your visual experience.
 						</p>
 					</div>
-					<Illustration />
-				</section>
-				<section className="grid">
+					{/* <Illustration /> */}
+				</div>
+			</section>
+			<section className="sect-grid">
+				<div className="section-left"></div>
+				<div className="section-right grid-tem">
 					<Gridcard />
-				</section>
-			</div>
-			<Footer />
+				</div>
+			</section>
 		</div>
 	);
 }

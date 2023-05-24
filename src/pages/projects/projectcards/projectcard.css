@@ -1,7 +1,9 @@
 .project-grid {
 	display: grid;
-	grid-template-columns: repeat(2, 61%);
+	grid-template-columns: repeat(2, 35%);
 	gap: 15%;
+	/* background: royalblue; */
+	width: 100%;
 }
 
 .ProjectCard {
@@ -34,4 +36,37 @@
 	background: grey;
 	opacity: 0.3;
 	margin-top: 2%;
+}
+@media (max-width: 440px) {
+	.project-grid {
+		display: block;
+		/* grid-template-columns: repeat(1, 35%);
+		gap: 15%; */
+		/* background: royalblue; */
+		width: 100%;
+	}
+	.project {
+		/* background: yellowgreen; */
+		/* width: 78%; */
+		height: 100vh;
+		/* z-index: 20;
+		position: absolute;
+		top: 0px;
+		right: 0px; */
+		padding: 30% 15% 5% 6%;
+	}
+	.card-title {
+		/* font: normal normal bold 18px/30px Orelo SemiWide Extra; */
+		font-size: 16px;
+	}
+	.ProjectCard {
+		margin-bottom: 10%;
+	}
+	.card-picture {
+		width: 100%;
+		height: 180px;
+		background: grey;
+		opacity: 0.3;
+		margin-top: 2%;
+	}
 }

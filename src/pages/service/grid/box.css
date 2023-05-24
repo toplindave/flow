@@ -1,9 +1,50 @@
 .box {
-	/* background: teal; */
+	background: transparent;
 	/* height: 300px; */
 	border: 0.5px solid #f7dd95;
 	/* height: 100%; */
 	padding: 6% 7% 15% 7%;
+	cursor: pointer;
+	position: relative;
+	/* display: none; */
+}
+.numbering-card {
+	background: white;
+	width: 35px;
+	height: 35px;
+	color: black;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 700;
+	font-size: 1rem;
+	font-family: "Orelo SemiWide Heavy";
+}
+.box:hover .box-header,
+.box:hover .box-text {
+	color: black;
+	transition: all 0.4s ease-in-out;
+}
+.box::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: white;
+	z-index: -1;
+	opacity: 0.56;
+	transform: scaleX(0);
+	transform-origin: right;
+	transition: transform 0.4s ease-in-out;
+}
+.box:hover::after {
+	transform: scaleX(1);
+	transform-origin: left;
 }
 
 .display {
@@ -42,4 +83,33 @@
 	height: 26px;
 	border-radius: 50%;
 	background: darkcyan;
+}
+@media (max-width: 440px) {
+	.box {
+		background: transparent;
+		/* height: 300px; */
+		border: 0.5px solid #f7dd95;
+		/* height: 100%; */
+		padding: 15% 5% 15% 7%;
+		cursor: pointer;
+		position: relative;
+		/* display: none; */
+		display: flex;
+		flex-direction: row-reverse;
+	}
+	.box-letter {
+		width: 50%;
+	}
+	.display {
+		/* position: absolute;
+		right: 0;
+		top: ; */
+		width: 50%;
+	}
+	.box-header {
+		font-size: 16px;
+	}
+	.box-text {
+		font-size: 12px;
+	}
 }

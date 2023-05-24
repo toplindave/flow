@@ -1,4 +1,5 @@
 import React from "react";
+import "./footercard.css";
 
 function FooterCard(props) {
 	return (
