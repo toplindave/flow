@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import "./App.css";
 import Footer from "./components/footer/Footer";
 // import Scroll from './components/scroll.js/Scroll';
@@ -10,8 +10,14 @@ import Contact from "./pages/contact/Contact";
 import Home from "./pages/home/Home";
 import Projects from "./pages/projects/Projects";
 import Services from "./pages/service/Services";
+import { useEffect } from "react";
+// import ScrollToTop from "./components/scrollToTop/ScrollToTop";
 
 function App() {
+	const { pathname } = useLocation();
+	useEffect(() => {
+		window.scrollTo({ top: 0, behavior: "auto" });
+	}, [pathname]);
 	return (
 		<div className="App">
 			<div>
@@ -23,7 +29,6 @@ function App() {
 					{/* <Footer /> */}
 				</div>
 				<Sidebar />
-
 				<Routes>
 					<Route path="/" element={<Home />} />
 					<Route path="/Services" element={<Services />} />

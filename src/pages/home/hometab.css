@@ -192,8 +192,8 @@
 		text-decoration: none;
 		height: 40px;
 		width: 40px;
-		background: grey;
-		border-radius: 5px;
+		/* background: grey; */
+		/* border-radius: 5px; */
 	}
 	.copyright {
 		display: none;

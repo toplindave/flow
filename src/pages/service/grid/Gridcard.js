@@ -11,6 +11,7 @@ const DataInfo = (values) => {
 				header={values.header}
 				desp={values.desp}
 				nub={values.nub}
+				image={values.image}
 			/>
 		</>
 	);

@@ -13,7 +13,7 @@
 	z-index: 10;
 }
 .service-second-section {
-	height: 100vh;
+	height: 120vh;
 }
 
 .flex .dev {
@@ -21,6 +21,13 @@
 	width: calc(100% - 50%);
 	margin-bottom: 0px;
 	display: flex; */
+}
+/* .dev {
+	background: green;
+	overflow: hidden;
+} */
+.dev > * {
+	color: var(--gold);
 }
 p {
 	/* background: khaki; */
@@ -36,6 +43,23 @@ p {
 	background: royalblue;
 	margin-top: 3%;
 } */
+.illustration {
+	height: 65vh;
+	width: 94%;
+	/* background: navajowhite; */
+	/* position: relative; */
+	margin-top: 8%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* padding: 1rem; */
+	/* display: none; */
+}
+.diagram {
+	width: 100%;
+	height: 100%;
+	/* background: yellow; */
+}
 @media (max-width: 850px) {
 	.service-second-section {
 		height: 100vh;

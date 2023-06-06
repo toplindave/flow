@@ -9,6 +9,7 @@ function Homeform() {
 					<label htmlFor="name">Full name</label>
 					<input name="name" />
 				</div>
+
 				<div className="input">
 					<label htmlFor="email">Email</label>
 					<input name="email" />
@@ -20,8 +21,6 @@ function Homeform() {
 						<option value="less">less than $1000</option>
 						<option value="more">more than $1000</option>
 					</select>
-
-					{/* <input /> */}
 				</div>
 			</div>
 			<div className="input">

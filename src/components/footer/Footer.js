@@ -2,6 +2,9 @@ import React from "react";
 import FooterCard from "./footerBody/FooterCard";
 import { Link } from "react-router-dom";
 import "./footer.css";
+import { ReactComponent as Facebook } from "./facebook.svg";
+import { ReactComponent as Instagram } from "./instagram.svg";
+import { ReactComponent as Linkedin } from "./linkedin.svg";
 
 function Footer() {
 	return (
@@ -15,13 +18,19 @@ function Footer() {
 					<h2 className="social-h2">Follow us</h2>
 					<ul className="social-links">
 						<li className="social-links-li">
-							<Link className="social-icon" to="./"></Link>
+							<Link className="social-icon" to="./">
+								<Facebook />
+							</Link>
 						</li>
 						<li className="social-links-li">
-							<Link className="social-icon" to="./"></Link>
+							<Link className="social-icon" to="./">
+								<Instagram />
+							</Link>
 						</li>
 						<li className="social-links-li">
-							<Link className="social-icon" to="./"></Link>
+							<Link className="social-icon" to="./">
+								<Linkedin />
+							</Link>
 						</li>
 					</ul>
 				</div>
@@ -39,13 +48,19 @@ function Footer() {
 					<h2 className="social-h2">Follow us</h2>
 					<ul className="social-links">
 						<li className="social-links-li">
-							<Link className="social-icon" to="./"></Link>
+							<Link className="social-icon" to="./">
+								<Facebook />
+							</Link>
 						</li>
 						<li className="social-links-li">
-							<Link className="social-icon" to="./"></Link>
+							<Link className="social-icon" to="./">
+								<Instagram />
+							</Link>
 						</li>
 						<li className="social-links-li">
-							<Link className="social-icon" to="./"></Link>
+							<Link className="social-icon" to="./">
+								<Linkedin />
+							</Link>
 						</li>
 					</ul>
 				</div>

@@ -81,6 +81,12 @@ section {
 		calc(100vw - 100%)
 	); */
 	/* position: relative; */
+	/* border: 1px solid var(--gold); */
+	overflow-y: hidden;
+	/* height: 100%; */
+}
+.devh1 {
+	color: var(--gold);
 }
 .home-p,
 p {
@@ -93,6 +99,8 @@ p {
 	/* background-color: aqua; */
 	margin-top: 20px;
 	margin-bottom: 20px;
+	overflow-y: hidden;
+	/* border: 1px solid var(--gold); */
 }
 .learn-more-btn {
 	background: transparent;
@@ -106,6 +114,15 @@ p {
 	transition: 0.4s ease-in-out;
 	z-index: 1;
 	font-weight: 600;
+	animation: learn-more-swap 0.7s ease-out;
+}
+@keyframes learn-more-swap {
+	0% {
+		transform: translateY(50px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
 }
 .learn-more-btn:hover {
 	color: #060f1f;
