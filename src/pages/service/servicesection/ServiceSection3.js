@@ -7,7 +7,7 @@ function ServiceSection3() {
 		<>
 			<section className="sect-grid">
 				<div className="section-left"></div>
-				<div className="section-right grid-tem">
+				<div className="section-right grid-tem" style={{ overflowX: "hidden" }}>
 					<Gridcard />
 				</div>
 			</section>

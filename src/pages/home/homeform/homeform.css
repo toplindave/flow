@@ -12,6 +12,7 @@
 }
 .input {
 	/* background: seagreen; */
+	overflow: hidden;
 }
 label {
 	/* background: seagreen; */
@@ -41,10 +42,14 @@ textarea {
 	justify-content: space-around;
 	margin-top: 20px;
 }
-.attach,
-.submit {
+.btn-container {
 	width: 20%;
 	height: 40px;
+}
+.attach,
+.submit {
+	width: 100%;
+	height: 100%;
 	outline: none;
 	border: 1px solid var(--white);
 	color: var(--white);

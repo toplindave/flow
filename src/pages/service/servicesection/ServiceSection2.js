@@ -46,6 +46,25 @@ function ServiceSection2() {
 				},
 			}
 		);
+		gsap.fromTo(
+			".diagram",
+			{
+				x: "-100%",
+				opacity: 0,
+			},
+			{
+				x: "0%",
+				duration: 2,
+				opacity: 1,
+				ease: Power4.easeOut,
+				scrollTrigger: {
+					trigger: ".diagram",
+					// markers: true,
+					start: "top 50%",
+					toggleActions: "play pause resume reverse",
+				},
+			}
+		);
 	}, []);
 	return (
 		<>
@@ -66,9 +85,8 @@ function ServiceSection2() {
 							</div>
 						</p>
 					</div>
-					<div className="illustration">
+					<div className="illustration" style={{ overflowX: "hidden" }}>
 						<Illustration className="diagram" />
-						{/* <RotatedArrow /> */}
 					</div>
 				</div>
 			</section>

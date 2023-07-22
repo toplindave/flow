@@ -17,7 +17,11 @@ const card = (content) => {
 };
 
 function ProjectCards() {
-	return <div className="project-grid">{ProjectData.map(card)}</div>;
+	return (
+		<div className="project-grid" style={{ overflow: "hidden" }}>
+			{ProjectData.map(card)}
+		</div>
+	);
 }
 
 export default ProjectCards;

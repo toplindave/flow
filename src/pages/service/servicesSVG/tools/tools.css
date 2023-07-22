@@ -13,7 +13,7 @@
 	position: absolute;
 	/* top: 0; */
 	/* left: 0; */
-	animation: tool 10s linear infinite;
+	/* animation: tool 10s linear infinite; */
 }
 @keyframes tool {
 	100% {
@@ -47,7 +47,7 @@
 	/* transform-origin: bottom; */
 	/* transform: translate(-10px);
 	transition: transform 3s ease; */
-	animation: wrench 1s infinite ease-in-out;
+	/* animation: wrench 1s infinite ease-in-out; */
 }
 @keyframes wrench {
 	0% {
