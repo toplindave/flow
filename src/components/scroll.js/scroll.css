@@ -4,7 +4,6 @@
 	--margin: 10px;
 }
 .scroll {
-	/* background: fuchsia; */
 	width: 50px;
 	position: absolute;
 	right: 4%;
@@ -13,7 +12,6 @@
 	opacity: 0.8;
 	z-index: 50;
 	animation: scrollbtn 0.5s linear;
-	/* display: none; */
 }
 @keyframes scrollbtn {
 	0% {

@@ -1,9 +1,5 @@
 import React from "react";
-// import Footer from "../../components/footer/Footer";
-// import Scroll from "../../components/scroll.js/Scroll";
 import "./home.css";
-// import Homeform from "./homeform/Homeform";
-// import BackGroundLeft from "../../components/backgroundLeft/BackGroundLeft";
 import "./hometab.css";
 import "./homemobile.css";
 import HomeSection1 from "./homesections/HomeSection1";
@@ -22,8 +18,6 @@ function Home() {
 			<HomeSection4 />
 			<HomeSection5 />
 			<HomeSection6 />
-
-			{/* <Footer /> */}
 		</div>
 	);
 }

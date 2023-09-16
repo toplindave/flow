@@ -4,10 +4,7 @@
 ::-webkit-scrollbar-track {
 	background: none;
 }
-::-webkit-scrollbar-thumb {
-	/* background: var(--green); */
-	/* height: 80vh; */
-}
+
 :root {
 	--green: #b2ff55;
 	--white: #ffffff;
@@ -19,88 +16,48 @@
 }
 .home {
 	background: transparent;
-	/* width: 78%;
-	height: 100vh; */
-	/* z-index: 2; */
-	/* position: absolute; */
-	/* top: 0px;
-	right: 0px; */
-	/* display: flex; */
 	scroll-snap-type: y mandatory;
 	scroll-behavior: smooth;
 	overflow-y: auto;
-	/* scrollbar-width: none; */
-	/* &::-webkit-scrollbar {
-		display: none;
-	} */
-	/* direction: rtl; */
-	/* position: relative; */
-	/* display: none; */
-	/* scroll-behavior: smooth; */
 	z-index: 10;
-	/* background-color: slategray; */
-	/* height: 100vh; */
-	/* width: 100%; */
 }
 section {
 	height: 100vh;
 	width: 100%;
-	/* padding: 10.5% 0% 0px 5%; */
 	scroll-snap-align: start;
 	scroll-snap-align: end;
-	/* direction: ltr; */
 	display: flex;
-	/* background: skyblue; */
 }
 .section-left {
 	width: 22%;
-	/* height: 50px; */
-	/* background: seagreen; */
 }
 .section-right {
 	width: 78%;
 	height: auto;
-	/* background: rebeccapurple; */
-	/* border: 1px solid aqua; */
 	padding: 5.5% 0% 0px 5%;
 }
 .dev {
 	font-family: var(--font-mediun);
 	color: var(--gold);
-	/* font-size: 2.3rem; */
 	font-size: clamp(1.9rem, 3vw, 6rem);
 	font-weight: 500;
-	/* background: royalblue; */
 	width: calc(100% - 35%);
-	/* margin-bottom: calc(100vh - 355px); */
 	margin-bottom: calc(100vw - 100%);
-	/* margin-bottom: calc(calc(90vw - 100%) + calc(100vh - 30%)); */
-	/* margin-bottom: clamp(
-		calc(100vw - 200%),
-		calc(80vw - 100%),
-		calc(100vw - 100%)
-	); */
-	/* position: relative; */
-	/* border: 1px solid var(--gold); */
 	overflow-y: hidden;
-	/* height: 100%; */
 }
 .devh1 {
 	color: var(--gold);
 }
 .home-p,
 p {
-	/* font-size: 1rem; */
 	font-size: clamp(0.5rem, 1.4vw, 3rem);
 	font-family: var(--normal-font);
 	font-weight: 300;
 	width: calc(100% - 25%);
 	line-height: 30px;
-	/* background-color: aqua; */
 	margin-top: 20px;
 	margin-bottom: 20px;
 	overflow-y: hidden;
-	/* border: 1px solid var(--gold); */
 }
 .learn-more-btn {
 	background: transparent;
@@ -153,13 +110,11 @@ p {
 	margin-bottom: 5px;
 }
 .flex {
-	/* background: steelblue; */
 	display: flex;
 	padding-right: 15%;
 	justify-content: space-between;
 }
 .flex-dev {
-	/* background: slateblue; */
 	width: 50%;
 	text-align: left;
 	font: normal normal normal 40px/56px Orelo SemiWide Medium;
@@ -168,6 +123,5 @@ p {
 }
 .flex-p {
 	font-size: 1rem;
-	/* background: seagreen; */
 	width: 44%;
 }

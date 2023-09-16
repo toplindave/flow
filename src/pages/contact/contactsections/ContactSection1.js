@@ -10,8 +10,6 @@ function ContactSection1() {
 			".devh1",
 			{
 				y: 120,
-
-				// opacity: 0,
 			},
 			{
 				y: 0,
@@ -23,8 +21,6 @@ function ContactSection1() {
 			".devp",
 			{
 				y: 120,
-
-				// opacity: 0,
 			},
 			{
 				y: 0,

@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import "./sidebar.css";
-// import logo from '../public/asset/logo.svg'
 import { ReactComponent as SvgIcon } from "./logo.svg";
 import Menubar from "../menubar/Menubar";
 
@@ -46,7 +45,6 @@ function Sidebar() {
 			<div className="menu-bar" onClick={handleToggle}>
 				<Menubar />
 			</div>
-			{/* <div className={toggle ? "mobile-nav " : "navbar"}> */}
 			<div className="mobile-nav">
 				<ul>
 					<li>

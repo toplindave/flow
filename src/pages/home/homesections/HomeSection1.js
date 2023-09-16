@@ -3,23 +3,14 @@ import "../home.css";
 import Scroll from "../../../components/scroll.js/Scroll";
 import gsap from "gsap";
 import { Power4 } from "gsap";
-// import { Timeline } from "gsap/gsap-core";
 
 function HomeSection1() {
-	// let revealRef = useRef(null);
-
-	// useEffect(() => {
-	// const el = revealRef.current;
-
-	// []);
 	useEffect(() => {
 		const tl = gsap.timeline({ delay: 0.3 });
 		tl.fromTo(
 			".devh1",
 			{
 				y: 120,
-
-				// opacity: 0,
 			},
 			{
 				y: 0,
@@ -31,8 +22,6 @@ function HomeSection1() {
 			".devp",
 			{
 				y: 120,
-
-				// opacity: 0,
 			},
 			{
 				y: 0,

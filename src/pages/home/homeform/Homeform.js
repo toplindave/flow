@@ -10,7 +10,6 @@ function Homeform() {
 		const form = gsap.timeline({
 			scrollTrigger: {
 				trigger: ".input-container",
-				// markers: true,
 				start: "top 70%",
 				toggleActions: "play pause resume reverse",
 			},

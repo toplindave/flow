@@ -21,7 +21,6 @@ function HomeSection6() {
 				ease: Power4.easeOut,
 				scrollTrigger: {
 					trigger: ".flexh1",
-					// markers: true,
 					start: "top 70%",
 					toggleActions: "play pause resume reverse",
 				},
@@ -40,7 +39,6 @@ function HomeSection6() {
 				ease: Power4.easeOut,
 				scrollTrigger: {
 					trigger: ".flexp",
-					// markers: true,
 					start: "top 60%",
 					toggleActions: "play pause resume reverse",
 				},

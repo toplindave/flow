@@ -20,7 +20,6 @@ function HomeSection3() {
 				ease: Power4.easeOut,
 				scrollTrigger: {
 					trigger: ".thirdh1",
-					// markers: true,
 					start: "top 70%",
 					toggleActions: "play pause resume reverse",
 				},
@@ -39,7 +38,6 @@ function HomeSection3() {
 				ease: Power4.easeOut,
 				scrollTrigger: {
 					trigger: ".thirdh2",
-					// markers: true,
 					start: "top 100% center 90%",
 					toggleActions: "play pause resume reverse",
 				},
@@ -58,7 +56,6 @@ function HomeSection3() {
 				ease: Power4.easeOut,
 				scrollTrigger: {
 					trigger: ".thirdp",
-					// markers: true,
 					start: "top 90% ",
 					toggleActions: "play pause resume reverse",
 				},

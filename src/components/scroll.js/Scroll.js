@@ -1,8 +1,5 @@
 import React from "react";
 import "./scroll.css";
-// import { TimelineLite } from "gsap/gsap-core";
-// import { Power4 } from "gsap/gsap-core";
-// import { motion } from "framer-motion";
 
 function Scroll() {
 	return (
