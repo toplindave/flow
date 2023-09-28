@@ -6,8 +6,10 @@ import { ReactComponent as Spiraaal } from "./spiraaal.svg";
 function Spiral() {
 	return (
 		<div className="spiral">
-			<img src="/asset/spiraal.svg" alt="" />
-			<img src="/asset/spiraaal.svg" alt="" />
+			<Spiraal />
+			<Spiraaal />
+			{/* <img src="/asset/spiraal.svg" alt="" /> */}
+			{/* <img src="/asset/spiraaal.svg" alt="" /> */}
 		</div>
 	);
 }
