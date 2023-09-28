@@ -8,7 +8,7 @@
 	bottom: 0px;
 	z-index: 2;
 }
-.spiral img:nth-child(1) {
+.spiral svg:nth-child(1) {
 	width: 50%;
 	height: 50%;
 	rotate: 90deg;
@@ -17,7 +17,7 @@
 	right: -22%;
 	top: -22%;
 }
-.spiral img:nth-child(2) {
+.spiral svg:nth-child(2) {
 	width: 50%;
 	height: 50%;
 	opacity: 0.4;
